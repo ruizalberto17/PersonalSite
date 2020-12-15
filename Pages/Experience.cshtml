@@ -1,0 +1,35 @@
+﻿@page
+@model ExperienceModel
+@{
+    ViewData["Title"] = "Experience";
+}
+
+<div class="jumbotron jumbotron-fluid jumbotron-container text-white project-jumbotron">
+    <div class="container-fluid jumbotron-content">
+        <p class="text-center mb-4 jumbotron-header">Experience</p>
+    </div>
+</div>
+
+<div class="container">
+    <table class="experience-container">
+        <thead class="experience-table-header">
+            <tr>
+                <th scope="col">Company Name</th>
+                <th scope="col">Job Title</th>
+                <th scope="col">Job Description</th>
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (Job job in Model.Jobs)
+            {
+             <tr class="experience-table-row">
+                 <td>@job.Company</td>
+                 <td>@job.Title</td>
+                 <td>@job.Description</td>
+                 <td>@job.Date</td>
+             </tr>
+            }
+        </tbody>
+    </table>
+</div>
