@@ -11,25 +11,27 @@
 </div>
 
 <div class="container">
-    <table class="experience-container">
-        <thead class="experience-table-header">
-            <tr>
-                <th scope="col">Company Name</th>
-                <th scope="col">Job Title</th>
-                <th scope="col">Job Description</th>
-                <th scope="col">Date</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (Job job in Model.Jobs)
+    <div class="experience-content">
+        <table>
+            <thead class="experience-table-header">
+                <tr>
+                    <th scope="col">Company Name</th>
+                    <th scope="col">Job Title</th>
+                    <th scope="col">Job Description</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Job job in Model.Jobs)
             {
-             <tr class="experience-table-row">
-                 <td>@job.Company</td>
-                 <td>@job.Title</td>
-                 <td>@job.Description</td>
-                 <td>@job.Date</td>
-             </tr>
+                <tr class="experience-table-row">
+                    <td>@job.Company</td>
+                    <td>@job.Title</td>
+                    <td>@job.Description</td>
+                    <td>@job.Date</td>
+                </tr>
             }
-        </tbody>
-    </table>
+            </tbody>
+        </table>
+    </div>
 </div>

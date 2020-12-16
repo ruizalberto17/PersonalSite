@@ -39,7 +39,23 @@
     color: #5A5A5A;
 }
 
-.project-container {
+.resume-content-half {
+    color: #5A5A5A;
+    padding: 15px 5px;
+    width: 50%;
+    float: left;
+}
+
+.myself-image {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 20% !important;
+    height: 20% !important;
+    border-radius: 15px !important;
+}
+
+.project-content {
     padding-bottom: 35px;
 }
 
@@ -78,18 +94,25 @@ a.navbar-brand {
     word-break: break-all;
 }
 
-.experience-table-header {
-    background-color: #767983;
+.experience-content {
+    padding-bottom: 35px;
+}
+table {
+    table-layout: fixed;
+    width: 100%;
 }
 
-th {
-    padding: 15px;
+.experience-table-header tr, th {
+    background-color: rgba(118, 121, 131, 0.30);
+    padding: 15px 20px;
+    text-align: left;
 }
 
 td {
-    padding: 15px;
-    background-color: rgba(118, 121, 131, 0.30);
+    background-color: rgba(118, 121, 131, 0.10);
     color: black;
+    padding: 15px 20px;
+    text-align: left;
 }
 
 /* Provide sufficient contrast against white background */
