@@ -1,20 +1,32 @@
 ﻿@page
 @model ContactModel
+
 @{
     ViewData["Title"] = "Contact";
 }
 
-<div class="jumbotron jumbotron-fluid jumbotron-container resume-jumbotron text-white">
+<div class="jumbotron jumbotron-fluid jumbotron-container contact-jumbotron text-white">
     <div class="container-fluid jumbotron-content">
         <p class="text-center jumbotron-header mb-4">I look forward to hearing from you!</p>
     </div>
 </div>
 
 <div class="container">
-    <div class="resume-content">
+    <div class="contact-content">
         <h4 class="general-header mb-3">Contact</h4>
         <p class="general-content">
-            For more information regarding my experience, please refer to my<partial name="_Links" for="ResumeEnding"/>.
+            For more information regarding my experience, please refer to my <partial name="_Links" for="ResumeEnding" />.
         </p>
+    </div>
+    <div class="contact-content">
+        <h4 class="general-header mb-3">Send Your Information</h4>
+        <form method="post">
+            <input type="text" class="contact-input" placeholder="Name" asp-for="Email.Name" required/><br>
+            <input type="text" class="contact-input" placeholder="Company" asp-for="Email.Company" required/><br>
+            <input type="text" class="contact-input" placeholder="Email" asp-for="Email.EmailAddress" required/><br>
+            <input type="text" class="contact-input" placeholder="Phone Number" asp-for="Email.PhoneNumber" required/><br>
+            <textarea placeholder="Message" asp-for="Email.Body" required></textarea><br>
+            <input type="submit" />
+        </form>
     </div>
 </div>

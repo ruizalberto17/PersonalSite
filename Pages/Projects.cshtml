@@ -15,22 +15,25 @@
 <div class="container">
     @foreach (Project project in Model.Projects)
     {
-        <div class="project-content">
-            <h4 class="project-title general-header">
-                @project.Title
-            </h4>
-            <p class="project-year general-header">
-                @project.Year
-            </p>
-            <p class="project-description general-content">
-                @project.Description
-            </p>
-        </div>
+    <div class="project-content">
+        <a href="@project.Preview" target="_blank">
+            <img class="project-image" src="@project.Preview" alt="Poject Preview" style="width: 70%; height: 50%;">
+        </a>
+        <h4 class="project-title general-header">
+            @project.Title
+        </h4>
+        <p class="project-year general-header">
+            @project.Year
+        </p>
+        <p class="project-description general-content">
+            @project.Description
+        </p>
+    </div>
     }
     <br>
     <h4 class="general-header">Portfolio</h4>
     <p class="general-content">
-        For more information regarding my projects, please refer to my <partial name="_Links" for="GithubUsername" />
+        For more information regarding my projects, please refer to my<partial name="_Links" for="GithubUsername" />.
     </p>
     <br>
 </div>
