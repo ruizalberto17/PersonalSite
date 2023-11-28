@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using PersonalSite.Models;
+﻿using PersonalSite.Models;
+using System.Threading.Tasks;
 
 namespace PersonalSite.Services
 {

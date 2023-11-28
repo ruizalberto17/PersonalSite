@@ -13,34 +13,44 @@ namespace PersonalSite.Pages
                 new Job()
                 {
                     Company = "Forward Slope Inc.",
+                    Title = "Software Engineer II",
+                    Description = "Planned and Oversaw Sprints including and not limited to Jira ticketing,  documentation, and STIG Checklists architecture requirements. " +
+                    "Optimized Project’s architecture by implementing SpringBoot Technologies requiring only one micro-service instead of two. " +
+                    "Docker containerization and package management. " +
+                    "Implemented custom error-handling and 75% test code coverage. " +
+                    "Implemented peer code-reviews when updating code. " +
+                    "Updating documentation and versioning.",
+                    Date = "September 2022 - July 2023"
+                },
+                new Job()
+                {
+                    Company = "Forward Slope Inc.",
+                    Title = "Software Engineer I",
+                    Description = "Developed REST and SOAP APIs that handled critical translations between two micro-services. " +
+                    "Integrated Confluent Kafka technologies into the microservices to prevent data loss and ensure data is properly translated. " +
+                    "Designed CI/CD strategies for automating deployments to Openshift Clusters via Gitlab pipelines. Staging OpenShift environments for non - master branches. " +
+                    "Production OpenShift environments when merging to master branch. " +
+                    "Designed and Optimized XSDs to ensure uniform data for proper translation of request data while validating both requests and responses.",
+                    Date = "March 2021 - September 2022"
+                },
+                new Job() 
+                {
+                    Company = "Forward Slope Inc.",
                     Title = "Jr. Software Engineer",
-                    Description = "Collaborated with teams of various sizes during all stages of the agile development lifecycle," +
-                    " from requirement gathering to product releases. Wrote and optimized JUnit code, while also implementing Jenkins for" +
-                    " consistent and thorough automated testing. Wrote, modified, and maintained Java code while providing, and updating documentation.",
+                    Description = "Developed and maintained Java, JavaScript, and Python code while collaborating with teams  following Agile Software Development methodologies. " +
+                    "Implemented Continuous Integration technologies and procedures into newly developing  projects by creating and optimizing Jenkins server builds. " +
+                    "Incorporated Test Automation through Jenkins, by incorporating JUnit Test checks within Maven/Gradle project builds. " +
+                    "Optimized project architecture by removing unnecessary build dependencies leading to lower coupling between project modules and higher cohesion for modules.",
                     Date = "May 2019 - June 2020"
                 },
                 new Job()
                 {
                     Company = "San Diego State University",
-                    Title = "Undergraduate Teaching Assistant",
-                    Description = "Mentored students through office hours and one-on-one communication. Checked assignments, proctored tests, and provided grades according " +
-                    "to university standards. Maintained atmosphere of academic learning and advancement to facilitate learning and development of critical thinking skills.",
-                    Date = "Jan 2017 - May 2017"
-                },
-                new Job()
-                {
-                    Company = "Apple Inc.",
-                    Title = "AppleCare College Advisor",
-                    Description = "Efficient use of available resources while multi-tasking in order to solve problem at hand. Ability to quickly learn and apply new company " +
-                    "policies and procedures to further help customers. Verified data integrity and accuracy.",
-                    Date = "Aug 2016 - Feb 2017"
-                },
-                new Job()
-                {
-                    Company = "San Diego State University",
                     Title = "Undergraduate Research Assistant",
-                    Description = "Designed, implemented and monitored website and database while continuously improving it in a fast-paced environment. " +
-                    "Created site layout and user interface using HTML and CSS. Utilized PHP, SQL, and JavaScript and other languages as needed.",
+                    Description = "Designed a Relational Database using SQL for quick retrieval of Phage research. " +
+                    "Optimized and maintained the database through Normalization database techniques to  remove and avoid redundancy. " +
+                    "Created a dynamic website and User-Interface linked to the database using HTML, CSS, and JavaScript. " +
+                    "Utilized PHP and MySQL in order to access and modify the database through the website depending on user privileges.",
                     Date = "May 2016 - Aug 2016"
                 }
             };

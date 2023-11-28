@@ -12,29 +12,27 @@ namespace PersonalSite.Pages
         public List<string> Technologies { get; set; }
         public void OnGet()
         {
-            FullName = "Alberto Ruiz";
+            FullName = "Alberto Andres Ruiz";
             LinkedInUsername = "albertoruiz17";
-            YearsOfExperience = 2;
+            YearsOfExperience = 4;
             Languages = new List<string> {
-                "C#",
                 "Java",
+                "JavaScript",
                 "Python",
                 "SQL",
-                "JavaScript",
-                "C/C++",
-                "HTML",
-                "CSS",
-                "ASP.NET"
+                "C#",
             };
             Technologies = new List<string> {
+                "Spring Boot",
                 "Jira",
-                "Jenkins",
+                "OpenShift",
+                "Confluent Kafka",
                 "Github/Bitbucket",
                 "JUnit",
                 "Wildfly/Tomcat",
                 "Maven/Gradle",
                 "MySQL",
-                "Azure"
+                "ASP.NET",
             };
         }
     }
